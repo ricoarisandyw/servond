@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.servond.reaper.servond.Activity.Common.loginActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_servondlogo"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:drawableLeft="@mipmap/ic_person"
+        android:id="@+id/etUsername"/>
+
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:drawableLeft="@mipmap/ic_password"
+        android:id="@+id/etPassword"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLogin"
+        android:textColor="#FFFFFF"
+
+        android:background="#018489"
+        android:text="LOGIN CLIENT"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:id="@+id/btnLoginMechanic"
+        android:background="#018489"
+        android:text="LOGIN MECHANIC"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSignup"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:background="#018489"
+        android:text="SIGN UP"/>
+
+</LinearLayout>

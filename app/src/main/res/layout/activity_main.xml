@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.servond.reaper.servond.Activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/mainHeader">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/mainLogo"
+            android:src="@mipmap/ic_servondlogo"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/mainHeader"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnUrgent"
+            android:background="#018489"
+            android:padding="20dp"
+            android:drawableLeft="@mipmap/ic_urgent"
+            android:textSize="10pt"
+            android:textColor="#FFFFFF"
+            android:text="DARURAT!"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBook"
+            android:background="#00DAA4"
+            android:padding="20dp"
+            android:paddingLeft="50dp"
+            android:textSize="10pt"
+            android:textColor="#FFFFFF"
+            android:drawableLeft="@mipmap/ic_bike"
+            android:text="SERVICE"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnHelp"
+            android:background="#00C993"
+
+            android:textSize="10pt"
+            android:textColor="#FFFFFF"
+            android:padding="20dp"
+            android:paddingLeft="50dp"
+            android:drawableLeft="@mipmap/ic_help"
+            android:text="BANTUAN"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00B882"
+            android:paddingLeft="50dp"
+            android:padding="20dp"
+            android:textSize="10pt"
+            android:textColor="#FFFFFF"
+            android:id="@+id/btnSearchClient"
+            android:drawableLeft="@drawable/places_ic_search"
+            android:text="DAFTAR ORDER"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
